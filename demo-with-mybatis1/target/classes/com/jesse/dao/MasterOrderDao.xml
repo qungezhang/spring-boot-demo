@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jesse.dao.MasterOrderDao" >
+  <resultMap id="BaseResultMap" type="com.jesse.dao.MasterOrderDao" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="order_id" property="orderId" jdbcType="VARCHAR" />
+    <result column="customer_user_id" property="customerUserId" jdbcType="INTEGER" />
+    <result column="order_status" property="orderStatus" jdbcType="TINYINT" />
+    <result column="order_type" property="orderType" jdbcType="TINYINT" />
+    <result column="create_time" property="createTime" jdbcType="BIGINT" />
+    <result column="service_user_id" property="serviceUserId" jdbcType="INTEGER" />
+    <result column="shot_date" property="shotDate" jdbcType="VARCHAR" />
+    <result column="city_id" property="cityId" jdbcType="INTEGER" />
+    <result column="deadline_time" property="deadlineTime" jdbcType="BIGINT" />
+    <result column="is_addsheet" property="isAddsheet" jdbcType="BIT" />
+    <result column="is_show" property="isShow" jdbcType="BIT" />
+  </resultMap>
+</mapper>
